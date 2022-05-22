@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  strapi:
+    image: example-strapi:4-SNAPSHOT
+    ports: 
+      - 1337:1337
+    environment: 
+      - DATABASE_HOST=140.238.198.140
+      - DATABASE_CLIENT=mysql
+      - DATABASE_PORT=30432
+      - DATABASE_NAME=dev_strapi_db
+      - DATABASE_USERNAME=dev_strapi
+      - DATABASE_PASSWORD=D3v000
+      - DATABASE_SSL=false
